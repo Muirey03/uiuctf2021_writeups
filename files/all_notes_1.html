@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.note-cards {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-auto-rows: auto;
+	grid-gap: 1rem;
+}
+.note-card {
+	border: 2px solid black;
+	border-radius: 3px;
+	padding: .5rem;
+}
+.note-content {
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+.checklist {
+	position: relative;
+	list-style: none;
+	margin-left: 0;
+	padding-left: 1.2em;
+}
+.checklist li.checked:before {
+	content: '✓';
+	position: absolute;
+	left: 0;
+}
+.checklist li.unchecked:before {
+	content: '○';
+	position: absolute;
+	left: 0;
+}
+</style>
+</head>
+<body>
+<a id='folder_3'><h1>iCloud - Recently Deleted</h1></a><ul>
+</ul>
+
+<a id='folder_4'><h1>iCloud - Notes</h1></a><ul>
+<li><a href='#note_10'>Note 10</a>: Secret Plan</li>
+</ul>
+
+<div class='note-cards'>
+<div class='note-card'>
+<a id='note_10'><h1>Note 10</h1></a>
+<b>Account:</b> iCloud <br />
+<b>Folder:</b> <a href='#folder_4'>Notes</a> <br/>
+<b>Title:</b> Secret Plan <br/>
+<b>Created:</b> 2021-07-23 17:11:19 +0100 <br/>
+<b>Modified:</b> 2021-07-24 17:12:59 +0100 <br />
+<b>CloudKit Last Modified Device:</b> Red’s iPad <br />
+<div class='note-content'>
+<h1>Secret Plan</h1>
+1. Sneak into Navigation and chart course to the nearest star.
+2. Enable manual lock to stop crew from redirecting the ship.
+3. Watch them all burn as we get away on the only escape pod.
+
+uiuctf{wh3n_the_imp0stors_4re_su5_305da9}</div> <!-- Close the 'note-content' div -->
+</div> <!-- Close the 'note-card' div -->
+</div> <!-- Close the 'note-cards' div -->
+</body></html>
