@@ -1,4 +1,4 @@
-# forensics/Tablet 2
+# forensics/Tablet 2 (197 points)
 **Description :** *Wait... there are TWO impostors?! Red must have been in contact with the other impostor. See if you can find out what they are plotting.*
 
 *NOTE: Both Tablet challenges use the same file, which can be downloaded from Tablet 1.*
@@ -10,7 +10,7 @@ tablet.tar.gz](https://drive.google.com/file/d/1KcRzBZRA1VbuyzR6fVaibLgJQ11dD737
 
 The download is an archive of a portion of the firmware of an iPadOS device. I knew that application data is stored at `/private/var/mobile/Containers/Data/Application`, so this is where I began my search.
 
-I quickly stumble across many `.ktx` files in the Library/ directory of every application. A quick google search reveals these are "screen snapshot" files that are taken every time the user switches applications. This really caught my eye:
+I quickly stumbled across many `.ktx` files in the Library/ directory of every application. A quick google search revealed these are "screen snapshot" files that are taken every time the user switches applications. This really caught my eye:
 
 > KTX files are most commonly used by forensic investigators, who examine users' KTX files for evidence of what a user was doing at specific times.
 
